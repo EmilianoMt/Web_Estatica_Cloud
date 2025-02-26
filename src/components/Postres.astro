@@ -1,12 +1,18 @@
+---
+const { img, nombre, texto, precio } = Astro.props;
+---
 
-
-<div class="">		
-	<main class="grid min-h-screen">
-		<section>
-			<div>
-
+<div class="w-full flex items-center justify-center">
+	<div class="h-[12rem] w-[34rem] flex">
+		<img class="h-[14rem] w-[10rem] py-8" src={img} />
+		<div class="flex w-full">
+			<div class="w-3/4 p-8">
+				<h1>{nombre}</h1>
+				<h1 class="text-[.8rem]">{texto}</h1>
 			</div>
-		</section>
-		<h1 class="flex">postres </h1>
-	</main>
+			<div class="w-1/4 pb-8 flex items-end justify-center">
+				{precio}
+			</div>
+		</div>
+	</div>
 </div>
