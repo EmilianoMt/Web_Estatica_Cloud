@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://emilianomt.github.io',
-  base: 'Web_Estatica_Cloud',
+  // base: 'Web_Estatica_Cloud',
   vite: {
     plugins: [tailwindcss()]
   }
